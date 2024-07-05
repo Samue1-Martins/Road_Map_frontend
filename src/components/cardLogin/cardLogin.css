@@ -1,0 +1,78 @@
+.container {
+    height: 300px;
+    width: 400px;
+    gap: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 20px -13px #000000;
+    border-top: 3px solid rgb(6, 77, 53);
+}
+
+.containerLogin {
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-style: none;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    height: 35px;
+    width: 75%;
+    padding-left: 15px;
+}
+
+input::placeholder {
+    color: rgb(6, 77, 53);
+    font-family: "Nunito", sans-serif;
+}
+
+.containerLoginSection1 {
+    /* height: 50%; */
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4,
+a {
+    font-family: "Nunito", sans-serif;
+}
+
+.containerLoginSection2 {
+    /* height: 50%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button1 {
+    border-style: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(6, 77, 53);
+    color: #ffffff;
+}
+
+.button2 {
+    border-style: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    color: rgb(6, 77, 53);
+}
