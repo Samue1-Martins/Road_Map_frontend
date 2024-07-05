@@ -1,13 +1,33 @@
 .main{
     height: 100%;
     width: 100%;
-    /* background-color: rgb(68, 88, 82); */
-
+    width: min(100%, 1100px);
+    margin: auto;
 }
 
 .mainSection1{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.mainText{ 
+    width: 470px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainText img {
+    height: 200px;
+}
+
+h3, p{
+    font-family: 'Nunito', sans-serif;
+}
+
+h3{
+    color: rgb(6, 77, 53);
 }

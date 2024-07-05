@@ -17,7 +17,8 @@ function CardLogin() {
                 </div>
                 <div className="containerLoginSection2">
                     <button className="button1">Entrar</button>
-                    <button className="button2">Criar nova conta</button>
+                    {/* <button className="button2">Criar nova conta</button> */}
+                    <a href="#">Não possui conta? <b>Registre-se</b></a>
                 </div>
             </div>
         </>

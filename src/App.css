@@ -9,8 +9,6 @@
 
 html, body{
   height: 100%;
-  min-width: (100%, 1100px);
-  margin: auto;
 }
 
 .App{

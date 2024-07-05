@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Fragment } from 'react'
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
 
@@ -8,21 +9,22 @@ import Header from './components/header/Header'
 import Main from './components/main/Main'
 import Footer from './components/footer/Footer'
 
+// import Routes
+import RoutesApp from './routes/Routes'
+
+// import pages Html
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className='App'>
-      <BrowserRouter />
       <Header />
       <div className='mainContent'>
-        {/* <Routes>
-          <Route path="/" element={<Main />} />
-        </Routes> */}
-        <Main />
+          <RoutesApp />
       </div>
       <Footer />
-      <BrowserRouter />
     </div>
   )
 }

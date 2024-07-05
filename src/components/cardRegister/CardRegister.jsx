@@ -17,7 +17,7 @@ function CardRegister() {
                 </div>
                 <div className="containerRegisterSection2">
                     <button className="button1">Criar conta</button>
-                    <a href="#">Já possui conta? Clique aqui</a>
+                    <a href="#">Já possui conta? <b>Clique aqui</b></a>
                 </div>
             </div>
         </>
