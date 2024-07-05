@@ -1,6 +1,5 @@
 import React from "react";
 import './main.css'
-import chairRoadMap from '../../assets/images/cadeiraRoadMap.png'
 import CardLogin from "../cardLogin/CardLogin";
 import CardRegister from "../cardRegister/CardRegister";
 

@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Fragment } from 'react'
-import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
 
+import { Routes, BrowserRouter, Route } from 'react-router-dom'
+import { AuthProvider } from './contexts/auth'
 
 // Import Components Html 
 import Header from './components/header/Header'
@@ -20,11 +20,13 @@ function App() {
 
   return (
     <div className='App'>
-      <Header />
-      <div className='mainContent'>
+      <AuthProvider>
+        <div className='mainContent'>
           <RoutesApp />
-      </div>
-      <Footer />
+        </div>
+        <Footer />
+      </AuthProvider>
+      <Header />
     </div>
   )
 }

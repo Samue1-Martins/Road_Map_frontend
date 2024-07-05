@@ -43,9 +43,12 @@ input::placeholder {
     justify-content: center;
 }
 
-h4,
-a {
+h4,a,p {
     font-family: "Nunito", sans-serif;
+}
+
+a {
+    cursor: pointer;
 }
 
 .containerLoginSection2 {
