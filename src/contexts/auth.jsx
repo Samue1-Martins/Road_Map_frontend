@@ -7,17 +7,18 @@ export const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const userToken = localStorage.getItem("user_token")
-        const userStorage = localStorage.getItem("users_db")
+        const userStorage = localStorage.getItem("users_bd")
+
         if (userToken && userStorage) {
             const hasUser = JSON.parse(userStorage)?.filter(
-                (user) => user.email === JSON.parde(userToken).email
+                (user) => user.email === JSON.parse(userToken).email
             );
-            if (hasUser) setUser[0]
+            if (hasUser) setUser[hasUser[0]]
         }
     }, []);
 
     const signin = (email, password) => {
-        const userStorage = JSON.parse(localStorage.getItem("users_DB"))
+        const userStorage = JSON.parse(localStorage.getItem("users_bd"))
         const hasUser = userStorage?.filter((user) => user.email === email)
         if (hasUser?.length) {
             if (hasUser[0].email === email && hasUser[0].password === password) {
@@ -34,7 +35,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const signup = (email, password) => {
-        const userStorage = JSON.parse(localStorage.getItem("users_db"))
+        const userStorage = JSON.parse(localStorage.getItem("users_bd"))
         const hasUser = userStorage?.filter((user) => user.email === email);
         if (hasUser?.length) {
             return "Uma conta já está cadastrada com este E-mail"
@@ -45,7 +46,7 @@ export const AuthProvider = ({ children }) => {
         } else {
             newUser = [{ email, password }]
         }
-        localStorage.setItem("users_db", JSON.stringify(newUser));
+        localStorage.setItem("users_bd", JSON.stringify(newUser));
         return
     }
 
@@ -54,7 +55,11 @@ export const AuthProvider = ({ children }) => {
         localStorage.removeItem("user_token")
     }
 
-    return <AuthContext.Provider
-        value={{ user, signed: !!user, signin, signup, signout }}
-    >{children}</AuthContext.Provider>
+    return (
+        <AuthContext.Provider
+            value={{ user, signed: !!user, signin, signup, signout }}
+        >
+            {children}
+        </AuthContext.Provider>
+    )
 }

@@ -1,5 +1,6 @@
 .container {
-    height: 300px;
+    /* height: 300px; */
+    padding: 20px 0px 20px 0px;
     width: 400px;
     gap: 25px;
     border-radius: 15px;
@@ -31,6 +32,12 @@ input {
 input::placeholder {
     color: rgb(6, 77, 53);
     font-family: "Nunito", sans-serif;
+}
+
+label{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(253, 61, 61);
+    font-weight: 800;
 }
 
 .containerLoginSection1 {

@@ -3,4 +3,8 @@
     width: 100%;
     width: min(100%, 1100px);
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+

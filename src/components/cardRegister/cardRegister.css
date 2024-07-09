@@ -1,5 +1,5 @@
 .containerRegister {
-    height: 300px;
+    padding: 20px 0px 20px 0px;
     width: 400px;
     gap: 25px;
     border-radius: 15px;
@@ -41,6 +41,12 @@ input::placeholder {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+label{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(253, 61, 61);
+    font-weight: 800;
 }
 
 h4,

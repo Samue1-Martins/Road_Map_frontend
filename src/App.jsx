@@ -21,12 +21,12 @@ function App() {
   return (
     <div className='App'>
       <AuthProvider>
+        <Header />
         <div className='mainContent'>
           <RoutesApp />
         </div>
         <Footer />
       </AuthProvider>
-      <Header />
     </div>
   )
 }

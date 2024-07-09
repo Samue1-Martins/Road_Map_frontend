@@ -24,10 +24,10 @@
     height: 200px;
 }
 
-h3, p{
+h2, h3, p{
     font-family: 'Nunito', sans-serif;
 }
 
-h3{
+h3, h2{
     color: rgb(6, 77, 53);
 }
